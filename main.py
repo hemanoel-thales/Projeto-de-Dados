@@ -31,7 +31,7 @@ for arquivo in arquivos: #Inicia o loop dentro dos arquivos enconrados no diret�
 
         total_paginas = len(pdf.pages) #Define o total de páginas do arquivo pdf aberto
 
-        for pagina in range(6,total_paginas): #inicia um loop por todas as paginas do PDF, iniciando pela página 6
+        for pagina in range(0,total_paginas): #inicia um loop por todas as paginas do PDF, iniciando pela página 6
             primeira_pagina = pdf.pages[pagina] #Define o indice da pagina atual do loop
             texto_pagina = primeira_pagina.extract_text().upper() #Captura todo o texto da pagina atual e transforma tudo em maiusculas
 
